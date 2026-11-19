@@ -20,7 +20,7 @@ jobs:
       
       - name: Build docker image
         run: |
-          docker build -t ${{secrets.DOCKERHUB_USERNAME}}/my-image:1.0 -f .
+          docker build -t ${{secrets.DOCKERHUB_USERNAME}}/my-image:1.0 .
           
       - name: push docker image
         run: |
