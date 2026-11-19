@@ -26,7 +26,7 @@ def add_student(name: str, course: str):
     db.commit() 
     cursor.close() 
     db.close() 
-    return {"message": "Student added successfully"} 
+    return {"message": "Student added sssssuccessfully"} 
  
 @app.get("/students") 
 def get_students(): 
