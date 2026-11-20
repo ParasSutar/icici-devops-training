@@ -37,3 +37,15 @@ def get_students():
     cursor.close() 
     db.close() 
     return students 
+
+@app.get("/home") 
+def welcomeMessage(): 
+    return {"message": "Welcome ot ICICI Bank"}
+
+@app.get("/login") 
+def loginMessage(): 
+    return {"message": "Welcome to Login Page"}
+
+@app.get("/register") 
+def registerlogin(): 
+    return {"message": "Welcome to Register Page"}
